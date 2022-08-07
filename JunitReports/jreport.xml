@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="24.198109">
+<testcase classname="To validate the login functionality of facebook application" name="To validate Create Account page functionality" time="11.420257">
+<system-out><![CDATA[When To click Create New Account button.....................................passed
+When To pass first name of the user.........................................passed
+When To pass last name of the user..........................................passed
+When To pass email of the user..............................................passed
+When To pass new password of the user.......................................passed
+When To select birth day of the user........................................passed
+When To select birth month of the user......................................passed
+When To select birth year of the user.......................................passed
+When To click gender of the user............................................passed
+Then To user will Click the Signup button...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality of facebook application" name="To validate Username and password functionality" time="12.777852">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at org.baseclass.UtilityClass.getDataFromExcel(UtilityClass.java:384)&#13;&#10;&#9;at org.stepdefinition4.Stepdef_FB_LoginPage.to_pass_the_password_in_the_password_field(Stepdef_FB_LoginPage.java:27)&#13;&#10;&#9;at ✽.To pass the password in the password field(src/test/resources/Facebook.feature:25)&#13;&#10;"><![CDATA[When To pass the username in the email field................................passed
+When To pass the password in the password field.............................failed
+When To click the login button..............................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.baseclass.UtilityClass.getDataFromExcel(UtilityClass.java:384)
+	at org.stepdefinition4.Stepdef_FB_LoginPage.to_pass_the_password_in_the_password_field(Stepdef_FB_LoginPage.java:27)
+	at ✽.To pass the password in the password field(src/test/resources/Facebook.feature:25)
+]]></failure>
+</testcase>
+</testsuite>
